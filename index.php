@@ -4,10 +4,7 @@ require 'functions.php';
 $buku = query("SELECT * FROM buku join kategori on kategori.id_kategori = buku.id_kategori");
 
 
-// tombol cari ditekan
-// if( isset($_POST["cari"])) {
-//   $tablet = cari($_POST["keyword"] );
-// }
+
 ?>
 
 <!DOCTYPE html>
@@ -34,44 +31,9 @@ $buku = query("SELECT * FROM buku join kategori on kategori.id_kategori = buku.i
       <div class="container">
       <div class="navbar-brand font-weight-bold" >
           <h3>Tata Buku</h3>
-        </div>
-        <!-- <form action="" method="post">
-                
-               <div class="input-group ">
-                <input type="text" class="form-control" name="keyword" size="30" placeholder="cari data" autocomplete="off">
-                <button class="btn btn-info" type="submit" name="cari">Cari</button>
-                
-              </div>
-                </form>
-                <div class="m-0">
-                <a href="../tubes/pages/samples/login.php" class="btn btn-info font-weight-bold">Masuk</a>
-                <a href="../tubes/pages/samples/registrasi.php" class="btn btn-info font-weight-bold">Daftar</a>
-                </div>
-      </div> -->
-    </nav>
-    <!-- Akhir Navbar -->
-
-    <!-- banner -->
-    <!-- <section class=" text-center mt-4">
-      <img src="img/tablet.png " width="1285" height="auto"/> -->
-      
-      
-    </section>
-    <!-- Akhir banner -->
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/2.png" class="d-block w-100 mt-3"  >
-    </div>
-    <div class="carousel-item">
-      <img src="img/tablet.png" class="d-block w-100 mt-3"  alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/3.png" class="d-block w-100 mt-3" width="1275" height="auto" alt="...">
-    </div>
-  </div>
-</div>
-    -->
+        </div>   
+    </nav>   
+  </section>
 
     <!-- container daftar buku -->
     <section id="skills">
@@ -104,13 +66,10 @@ $buku = query("SELECT * FROM buku join kategori on kategori.id_kategori = buku.i
 
     <!-- Akhir daftar buku -->
 
-   
-
-   
-
+  
     <!-- Footer -->
     <footer class="bg-primary text-white text-center pb-2">
-      <p class="pt-2">Dibuat dengan <i class="bi bi-heart text-white"></i> oleh <a href="https://www.instagram.com/ptriauliam/" class="text-white fw-bold">Putri Aulia Maulidina</a></p>
+      <p class="pt-2">Dibuat Oleh <a href="https://www.instagram.com/ptriauliam/" class="text-white fw-bold">Putri Aulia Maulidina</a></p>
     </footer>
     <!-- Akhir Footer -->
 

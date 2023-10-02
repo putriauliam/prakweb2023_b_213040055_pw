@@ -4,11 +4,6 @@ $id=$_GET["id"];
 
 
 $buku = query("SELECT * FROM buku join kategori on kategori.id_kategori = buku.id_kategori WHERE id_buku = $id");
-
-// tombol cari ditekan
-// if( isset($_POST["cari"])) {
-//   $tablet = cari($_POST["keyword"] );
-// }
 ?>
 
 <!DOCTYPE html>
@@ -25,16 +20,7 @@ $buku = query("SELECT * FROM buku join kategori on kategori.id_kategori = buku.i
       <div class="container">
       <div class="navbar-brand font-weight-bold" >
           <h3>Tata Buku</h3>
-        </div>
-       
-                <!-- <div class="m-0">
-                <a href="samples/login.php" class="btn btn-primary font-weight-bold">Masuk</a>
-                <a href="samples/registrasi.php" class="btn btn-primary font-weight-bold">Daftar</a>
-                </div> -->
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        
+        </div>    
       </div>
     </nav>
   
@@ -65,10 +51,7 @@ $buku = query("SELECT * FROM buku join kategori on kategori.id_kategori = buku.i
             <h5><?php echo $row["tahun_terbit"] ?></h5>
             
            
-            <?php endforeach; ?> 
-           
-            
-            
+            <?php endforeach; ?>  
 
             <form method="post">
                 <div class="form-grup">
@@ -81,6 +64,13 @@ $buku = query("SELECT * FROM buku join kategori on kategori.id_kategori = buku.i
        </div>
     </div>
     </section>
+
+    <!-- Footer -->
+       <footer class="bg-primary text-white text-center pb-2">
+      <p class="pt-2 mt-5">Dibuat Oleh <a href="https://www.instagram.com/ptriauliam/" class="text-white fw-bold">Putri Aulia Maulidina</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
